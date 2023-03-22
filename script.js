@@ -77,7 +77,7 @@ const questions = {
         "score": 30,
         "img": "https://s9.travelask.ru/system/images/files/001/190/875/wysiwyg_jpg/f005.jpg?1536941628"
     },
-    "Мыс флигели расположен на острове?": {
+    "Мыс Флигели расположен на острове?": {
         "true_answer": 0,
         "answers": ["Рудольфа", "Врангеля", "Ратманова"],
         "score": 30,
