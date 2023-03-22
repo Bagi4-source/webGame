@@ -5,11 +5,23 @@ const questions = {
         "score": 10,
         "img": "https://u.foxford.ngcdn.ru/uploads/tinymce_file/file/14205/e0a803ccccb8dc18.png"
     },
+    "Выберите территорию, реки которой наиболее подходят для строительства ГЭС": {
+        "true_answer": 0,
+        "answers": ["Юг Восточной Сибири", "Уральские горы", "Западно-Сибирская равнина"],
+        "score": 10,
+        "img": "https://s9.travelask.ru/system/images/files/001/502/969/wysiwyg_jpg/FCF11D52-187B-42D6-A5A2-25C680C589FD.jpg?1637931559"
+    },
     "Что является причиной возникновения цунами?": {
         "true_answer": 0,
         "answers": ["Моретрясение", "Извержение вулканов", "Океанский ветер"],
         "score": 10,
         "img": "https://waterservice.kz/blog/img/art110-1.jpg"
+    },
+    "Выберите вариант, где неверно указаны причинно-следственные связи": {
+        "true_answer": 1,
+        "answers": ["Создание полезащитных лесополос — уменьшает почвенную эрозию", "Орошение почв — предотвращает засоление земель", "Снегозадержание — увеличивает содержание влаги в почве"],
+        "score": 10,
+        "img": "https://gruntovozov.ru/wp-content/uploads/Zasolennyie-pochvyi/Zasolennyie-pochvyi_(34).jpg"
     },
     "Кто является первым создателем географической карты?": {
         "true_answer": 0,
@@ -23,11 +35,71 @@ const questions = {
         "score": 20,
         "img": "https://assets-global.website-files.com/599873abab717100012c91ea/5fa147823ed7903feb284a5d_%D1%82%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F_2%20(1)%20(1)%20(1)%20(1)%20(1)%20(1).png"
     },
-    "Чему равна общая площадь поверхности земли?": {
+    "Что является причиной возникновения цунами?": {
+        "true_answer": 0,
+        "answers": ["Моретрясение", "Извержение вулканов", "Океанский ветер"],
+        "score": 10,
+        "img": "https://waterservice.kz/blog/img/art110-1.jpg"
+    },
+    "Укажите пограничное озеро России": {
+        "true_answer": 2,
+        "answers": ["Байкал", "Чаны", "Каспийское"],
+        "score": 10,
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Caspian_Sea_from_orbit-NoRedLines.jpg/280px-Caspian_Sea_from_orbit-NoRedLines.jpg"
+    },
+    "Сколько составляет площадь поверхности всей Земли?": {
         "true_answer": 0,
         "answers": ["510.2 млн. кв. км.", "423.2 млн. кв.км.", "20.3 млн. кв. км."],
         "score": 30,
         "img": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Africa_and_Europe_from_a_Million_Miles_Away.png"
+    },
+     "Какова в России средняя продолжительность жизни мужчин? (по оценке ВОЗ 2019 года)": {
+        "true_answer": 2,
+        "answers": ["62.1", "57.9", "60.7"],
+        "score": 30,
+        "img": "https://visasam.ru/wp-content/uploads/2017/10/5410-6-eksperty_vsemirnogo_ban_ru-450x333.jpg"
+    },
+    "Какова в России средняя продолжительность жизни женщин? (по оценке ВОЗ 2019 года)": {
+        "true_answer": 1,
+        "answers": ["59.8", "67.5", "62.4"],
+        "score": 30,
+        "img": "https://www.renlife.ru/upload/medialibrary/18a/middle-age-white-hair-woman-holding-a-sandglass-timer_1194-334309.jpg"
+    },
+    "Какое место в мире по численности населения занимает Россия?": {
+        "true_answer": 0,
+        "answers": ["8", "18", "10"],
+        "score": 30,
+        "img": "https://cdn5.vedomosti.ru/image/2020/q/1e5d6w/original-1szs.png"
+    },
+    "С какой страной проходит самая короткая граница россии?": {
+        "true_answer": 1,
+        "answers": ["С Эстонией", "С КНДР", "С Южной Осетией"],
+        "score": 30,
+        "img": "https://s9.travelask.ru/system/images/files/001/190/875/wysiwyg_jpg/f005.jpg?1536941628"
+    },
+    "Мыс флигели расположен на острове?": {
+        "true_answer": 0,
+        "answers": ["Рудольфа", "Врангеля", "Ратманова"],
+        "score": 30,
+        "img": "https://img.geliophoto.com/fligely/00_fligely.jpg"
+    },
+    "Нна сколько часовых поясов поделена Россия?": {
+        "true_answer": 2,
+        "answers": ["10", "9", "11"],
+        "score": 30,
+        "img": "https://reader.lecta.rosuchebnik.ru/demo/8030/data/images/autogen_41732.jpg"
+    },
+    "Самая высокая точка России?": {
+        "true_answer": 0,
+        "answers": ["Гора Эльбрус", "Гора Казбек", "Гора Белуха"],
+        "score": 30,
+        "img": "https://www.erv.ru/upload/iblock/ca5/1.jpg"
+    },
+    "Какая эра является самой древней?": {
+        "true_answer": 1,
+        "answers": ["Архейская", "Палеозойская", "Мезозойская"],
+        "score": 30,
+        "img": "https://ykl-res.azureedge.net/dae41c9d-e624-4b77-9a5a-f5c98330aa8c/shutterstock759826384w400.png"
     },
     "Кто был автором теории литосферных плит?": {
         "true_answer": 1,
@@ -35,6 +107,12 @@ const questions = {
         "score": 30,
         "img": "https://u.foxford.ngcdn.ru/uploads/tinymce_image/image/75975/35dc9fb8e97db489.png"
     }
+     "Сколько морей омывает территорию России?": {
+        "true_answer": 0,
+        "answers": ["15", "18", "12"],
+        "score": 30,
+        "img": "https://s9.travelask.ru/system/images/files/001/190/875/wysiwyg_jpg/f005.jpg?1536941628"
+    },
 }
 
 const error = `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" version="1.1" viewBox="0 0 32 32">
