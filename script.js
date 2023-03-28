@@ -21,7 +21,7 @@ const questions = {
         "true_answer": 0,
         "answers": ["Озера, пруды и водохранилища", "Моря", "Реки"],
         "score": 5,
-        "img": "https://pix-feed.com/wp-content/uploads/2018/11/1-33.jpg"
+        "img": "https://natworld.info/wp-content/uploads/2020/05/vodohranilishhe-plotina.jpg"
     },
     "Выберите вариант, где неверно указаны причинно-следственные связи": {
         "true_answer": 1,
