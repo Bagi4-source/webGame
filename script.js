@@ -184,7 +184,7 @@ function end_test() {
         </div>
         <div class="navigation">
             <div class="total-result">${score}/${max_score}</div>
-            <div class="btn reload" onclick="location.reload()">Начать снова</div>
+            <div class="btn reload" onclick="location.reload()">Ещё раз</div>
         </div>
     </div>`);
 }
