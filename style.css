@@ -150,15 +150,7 @@ footer {
     color: #c21414;
 }
 
-.question-inner {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .question-img {
     height: 200px;
+    object-fit: contain;
 }
