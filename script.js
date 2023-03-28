@@ -35,6 +35,12 @@ const questions = {
         "score": 5,
         "img": "https://www.pnp.ru/upload/entities/2021/09/28/15/article/detailPicture/34/6a/ba/b6/3dddea75d60e01ebfea83b88eac9df64.jpg"
     },
+    "Каким перешейком континент Африка соединен с Азией": {
+        "true_answer": 2,
+        "answers": ["Корейским", "Панамским", "Суэцким"],
+        "score": 5,
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Nile_River_and_delta_from_orbit.jpg/280px-Nile_River_and_delta_from_orbit.jpg"
+    },
     "Какие течения относятся к холодным?": {
         "true_answer": 2,
         "answers": ["Аляскинское и Гольфстрим", "Гвианское и Калифорнийское", "Калифорнийское и Перуанское"],
