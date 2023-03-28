@@ -106,13 +106,13 @@ const questions = {
         "answers": ["М. Фернан", "А. Вегенер", "Д. Кук"],
         "score": 30,
         "img": "https://u.foxford.ngcdn.ru/uploads/tinymce_image/image/75975/35dc9fb8e97db489.png"
-    }
+    },
      "Сколько морей омывает территорию России?": {
         "true_answer": 0,
         "answers": ["15", "18", "12"],
         "score": 30,
         "img": "https://s9.travelask.ru/system/images/files/001/190/875/wysiwyg_jpg/f005.jpg?1536941628"
-    },
+    }
 }
 
 const error = `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" version="1.1" viewBox="0 0 32 32">
