@@ -239,9 +239,9 @@ function display_questions(i) {
             $('.navigation').css('justify-content', 'space-between');
         }
         if (i === $('.question').length - 1) {
-            $('.next').text('Завершить').attr("onclick", "end_test()").width(120);
+            $('.next').text('Завершить').attr("onclick", "end_test()").addClass('final');
         } else {
-            $('.next').text('>').attr("onclick", "next_question()").width(100);
+            $('.next').text('>').attr("onclick", "next_question()").removeClass('final');
         }
 
     }, 400);
