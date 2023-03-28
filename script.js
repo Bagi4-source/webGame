@@ -208,11 +208,11 @@ function get_question(question, answers) {
                     ${question}
                 </span>
         </div>
-        <div class="question-inner">
-            <div class="answers">
+        <div class="question-inner row">
+            <div class="answers col-12 col-md-6">
                 ${answers_element}
             </div>
-            <img class="question-img" src="${questions[question]['img']}" alt="">
+            <img class="question-img col-12 col-md-6" src="${questions[question]['img']}" alt="">
         </div>
         <div class="navigation">
             <div class="btn prev" onclick="prev_question()"><</div>
