@@ -17,7 +17,7 @@ const questions = {
         "score": 5,
         "img": "https://waterservice.kz/blog/img/art110-1.jpg"
     },
-     "Крупнейшим хранилищем запасов пресных вод в России": {
+    "Крупнейшим хранилищем запасов пресных вод в России": {
         "true_answer": 0,
         "answers": ["Озера, пруды и водохранилища", "Моря", "Реки"],
         "score": 5,
@@ -47,12 +47,6 @@ const questions = {
         "score": 5,
         "img": "https://assets-global.website-files.com/599873abab717100012c91ea/5fa147823ed7903feb284a5d_%D1%82%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F_2%20(1)%20(1)%20(1)%20(1)%20(1)%20(1).png"
     },
-    "Что является причиной возникновения цунами?": {
-        "true_answer": 0,
-        "answers": ["Моретрясение", "Извержение вулканов", "Океанский ветер"],
-        "score": 5,
-        "img": "https://waterservice.kz/blog/img/art110-1.jpg"
-    },
     "Укажите пограничное озеро России": {
         "true_answer": 2,
         "answers": ["Байкал", "Чаны", "Каспийское"],
@@ -65,7 +59,7 @@ const questions = {
         "score": 5,
         "img": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Africa_and_Europe_from_a_Million_Miles_Away.png"
     },
-     "Какова в России средняя продолжительность жизни мужчин? (по оценке ВОЗ 2019 года)": {
+    "Какова в России средняя продолжительность жизни мужчин? (по оценке ВОЗ 2019 года)": {
         "true_answer": 2,
         "answers": ["62.1", "57.9", "60.7"],
         "score": 5,
@@ -119,7 +113,7 @@ const questions = {
         "score": 5,
         "img": "https://u.foxford.ngcdn.ru/uploads/tinymce_image/image/75975/35dc9fb8e97db489.png"
     },
-     "Сколько морей омывает территорию России?": {
+    "Сколько морей омывает территорию России?": {
         "true_answer": 0,
         "answers": ["15", "18", "12"],
         "score": 5,
@@ -143,7 +137,20 @@ const ok = `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" versi
 
 
 let index = 0;
+let first_name;
+let last_name;
 
+function get_mark(x){
+    if (x <= 20)
+        return 1;
+    if (x <= 40)
+        return 2;
+    if (x <= 65)
+        return 3;
+    if (x <= 85)
+        return 4;
+    return 5;
+}
 function end_test() {
     let score = 0;
     let max_score = 0;
@@ -182,14 +189,18 @@ function end_test() {
     <div class="question">
         <div class="question-title">
                 <span class="question-title-text">
-                    Ваш результат ${score}/${max_score}!
+                    Поздравляю, ${first_name} ${last_name}!<br>
+                    Ваш результат ${Math.round(score / max_score * 100)}%!
                 </span>
         </div>
         <div class="results">
             ${results}
         </div>
         <div class="navigation">
-            <div class="total-result">${score}/${max_score}</div>
+            <div class="total-result">
+                ${Math.round(score / max_score * 100)}% <br>
+                Ваша оценка: ${get_mark(Math.round(score / max_score * 100))}
+            </div>
             <div class="btn reload" onclick="location.reload()">Ещё раз</div>
         </div>
     </div>`);
@@ -282,4 +293,11 @@ function create_test() {
     display_questions(0);
 }
 
-create_test();
+function start() {
+    first_name = $('#first_name').val();
+    last_name = $('#last_name').val();
+    if (first_name && last_name) {
+        $('#test').html('');
+        create_test();
+    }
+}
